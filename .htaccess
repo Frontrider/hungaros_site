@@ -1,0 +1,17 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine on
+
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{HTTP_HOST} ^jatek.hungaros.hu
+RewriteRule ^(.*)$ /game/$1 [L,QSA]
+
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{HTTP_HOST} ^map.hungaros.hu
+RewriteRule ^(.*)$ /map/$1 [L,QSA]
+
+
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{REQUEST_URI} !^/game
+RewriteCond %{REQUEST_URI} !^/map
+RewriteRule ^(.*)$ /phpbb3/$1 [L,QSA]

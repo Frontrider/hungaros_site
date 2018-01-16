@@ -1,0 +1,12 @@
+{
+  "minimumVersion" : 1,
+  "packages" : [
+    {
+      "title" : "HUNgaros Extreme V3.0",
+      "name" : "HUNgaros Extreme V3.0",
+      "version" : "2018-01-16-09-54-33",
+      "location" : "hungaros-extreme-v3.0.json",
+      "priority" : 1
+    }
+  ]
+}

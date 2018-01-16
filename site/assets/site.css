@@ -1,0 +1,8 @@
+.download:before {
+    font-family: FontAwesome;
+    content: "\f019 ";
+}
+.download:hover::before {
+    font-family: FontAwesome;
+    content: "\f019  ";
+}
